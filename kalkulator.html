@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kalkulator Sederhana</h2>
+    <input type="number" id="nomor1">
+    <select id="operator">
+        <option value="tambah">+</option>
+        <option value="kurang">-</option>
+        <option value="kali">*</option>
+        <option value="bagi">/</option>
+        <option value="modulus">%</option>
+    </select>
+    <input type="number" id="nomor2">
+    <button onclick="hitung()">Hitung</button>
+    <p id="result">Hasil: </p>
+    <script src="kalkulator.js"></script>
+</body>
+</html>
